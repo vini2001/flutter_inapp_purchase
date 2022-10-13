@@ -280,7 +280,7 @@
         [fetchProducts removeObjectForKey:key];
         result([FlutterError
                 errorWithCode:[self standardErrorCode:(int)error.code]
-                message:[self englishErrorCodeDescription:(int)error.code]
+                message:error.localizedDescription
                 details:nil]);
     }
 }
@@ -683,7 +683,8 @@
                               ];
     
     if (code > descriptions.count - 1) {
-        return descriptions[0];
+        NSString *descriptionReturn = [NSString stringWithFormat:@"%@ - Code: %i", descriptions[0], code];
+        return descriptionReturn;
     }
     return descriptions[code];
 }
