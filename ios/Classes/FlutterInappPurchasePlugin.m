@@ -699,7 +699,19 @@
                               @"Sorry, but this product is currently not available in the store.",
                               @"Unable to make purchase: Cloud service permission denied.",
                               @"Unable to process transaction: Your internet connection isn't stable! Try again later.",
-                              @"Unable to process transaction: Cloud service revoked."
+                              @"Unable to process transaction: Cloud service revoked.",
+                              @"Error code indicating that the user has not yet acknowledged Apple's privacy policy for Apple Music.",
+                              @"Error code indicating that the app is attempting to use a property for which it does not have the required entitlement.",
+                              @"Error code indicating that the offer identifier is invalid.",
+                              @"Error code indicating that the price you specified in App Store Connect is no longer valid.",
+                              @"Error code indicating that the signature in a payment discount isn't valid.",
+                              @"Error code indicating that parameters are missing in a payment discount.",
+                              @"An error code that indicates the user is ineligible for the subscription offer.",
+                              @"An error code that indicates the cancellation of an overlay.",
+                              @"An error code that indicates the overlay's configuration is invalid.",
+                              @"SKErrorOverlayPresentedInBackgroundScene",
+                              @"SKErrorOverlayTimeout",
+                              @"An error code that indicates the current platform doesn't support overlays."
                               ];
     
     if (0 <= code && code < descriptions.count)
